@@ -1,0 +1,47 @@
+.top {
+  width: 100%;
+  height: 50px;
+  position: sticky;
+  top: 25px;
+  display: flex;
+  justify-content: center; /* Align content to the right */
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  z-index: 999;
+}
+
+.topList {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.topLeft,
+.topRight {
+  flex: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.topListItem {
+  margin-right: 20px;
+  font-size: 15px;
+  font-weight: 300;
+  cursor: pointer;
+  color: white;
+}
+
+.login-list {
+  border-radius: 50px;
+  padding: 14px 25px;
+  background-color: rgb(215, 52, 52);
+}
+
+.link {
+  color: white; 
+  text-decoration: none;
+}
+
+.link:hover {
+  color: rgb(16, 85, 189);
+}
