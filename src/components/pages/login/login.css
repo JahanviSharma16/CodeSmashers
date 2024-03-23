@@ -1,0 +1,157 @@
+.login-modal{
+    min-height: 60%;
+    min-width: 100%;
+    z-index: 1000;
+  } 
+
+  .logo-img{
+    right: 0;
+    bottom: 0;
+    width: 10%;
+    height: 10%;
+    z-index: 1;
+    position: absolute;
+    opacity: 0.6;
+  }
+  .modal-form{
+    min-height: 400px;
+  }
+  .modal-header{
+    background-color: white;
+    outline: none;
+    border:none;
+    padding: 30px;
+  }
+  .custom-input {
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: #333 !important;
+  }
+  .custom-input:focus{
+    /* outline: none; */
+    border: 1px solid #3B5998;
+    border-radius: 10px;
+    background-color: #333 !important;
+  }
+  
+.modal-body p{
+    font-size:14px;
+  }
+  
+  .modal-body .form button {
+    background-color: #36526e;
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+  }
+  .form-button{
+    background-color: #36526e;
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    margin-left: 80px;
+  }
+  
+.modal-content {
+    border-radius: 10px;
+  }
+
+
+  
+  .modal-header {
+    background-color: #343a40;
+    color: white;
+    border-bottom: 1px solid #dee2e6;
+  }
+  
+  .modal-title {
+    font-size: 1.5rem;
+  }
+  
+  .modal-body {
+    padding: 20px;
+  }
+  
+  .inpField {
+    width: 100%;
+  }
+  
+  .btnSubmit {
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+
+/* Admin Panel Styling begins */
+
+.admin-sidebar {
+ height: auto;
+ width: 250px;
+ background-color: #343a40;
+ color: #ffffff;
+ padding: 5px;
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ transition: transform 0.3s ease-in-out;
+}
+
+.admin-sidebar.mobile-open {
+ position: fixed;
+ top: 0;
+ left: 0;
+ bottom: 0;
+ z-index: 1000;
+ width: 80%;
+ background-color: #343a40;
+ overflow-y: auto;
+}
+
+
+  
+  /* Styles specifically for disabled buttons */
+  .modal-body .form button:disabled {
+    color: white;
+    cursor: not-allowed;
+    background-color: #333;
+  }
+  .btn-close{
+    font-size: 10px;
+    font-weight: bold;
+    background-color: white;
+  }
+  
+  .logo-img{
+    right: 0;
+    bottom: 0;
+    width: 10%;
+    height: 10%;
+    z-index: 1;
+    position: absolute;
+    opacity: 0.6;
+  }
+  .placeholder-white::placeholder {
+    color: white; 
+  }
+  .otp_box{
+    width: 20%;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 10%;
+    background-color: #333;
+    text-align: center;
+    
+  }
+  
+  .otp_box:focus{
+    border: 1px solid #3B5998;
+    border-radius: 10%;
+    background-color: #333;
+    text-align:center;
+  }

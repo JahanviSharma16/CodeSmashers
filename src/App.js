@@ -1,33 +1,46 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 import Header from './components/header/Header';
 import Navbar from './components/navbar/Navbar';
+import Login from './components/pages/login/Login'; // Import the Login component
+
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
-} from "react-router-dom";
+  Routes,
+} from 'react-router-dom';
+import Home from './components/pages/home/Home';
+
+
 
 function App() {
   return (
     <Router>
-      <Navbar/>
-      <Header/>
-      {/* <Switch>
-          <Route exact path="/">
-            <Header />
-          </Route>
-          <Route path="/register">  </Route>
-          <Route path="/login">{<Login />}</Route>
-          <Route path="/write">{<Write /> } </Route>
-          <Route path="/settings">{<Settings />}</Route>
-          <Route path="/post/:postId">
-  
-          </Route>
-      </Switch> */}
+      <Routes>
+        {/* <Route path="/about" element={<About />} /> */}
+        <Route path="/login" element={<Login />} />
+        <Route path="/" element={<Home />} />
+      </Routes>
     </Router>
   );
 }
+
+// function App() {
+//   return (
+//     <Router>
+//       <Navbar />
+//       <Switch>
+//         <Route exact path="/">
+//           <Header />
+//         </Route>
+//         {/* Uncomment the following Route for the Login component */}
+//         <Route path="/login">{<Login />}</Route>
+    
+//         {/* Add other routes as needed */}
+//       </Switch>
+//     </Router>
+//   );
+// }
 
 export default App;
